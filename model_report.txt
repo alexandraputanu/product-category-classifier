@@ -1,0 +1,42 @@
+Product Category Classification Report
+=============================================
+Rows used after cleaning: 35096
+Rows after title augmentation for final training: 52565
+Number of categories: 13
+
+Model comparison on held-out test set:
+- Linear SVM: accuracy=0.9811
+- Multinomial Naive Bayes: accuracy=0.9387
+
+Best model: Linear SVM
+Best accuracy: 0.9811
+
+Classification report for best model:
+                  precision    recall  f1-score   support
+
+             CPU       0.00      0.00      0.00        17
+            CPUs       0.98      1.00      0.99       749
+ Digital Cameras       1.00      0.99      0.99       538
+     Dishwashers       0.99      1.00      0.99       681
+        Freezers       0.99      0.96      0.98       440
+ Fridge Freezers       0.98      0.99      0.98      1094
+         Fridges       0.94      0.97      0.95       687
+      Microwaves       0.98      1.00      0.99       466
+    Mobile Phone       0.00      0.00      0.00        11
+   Mobile Phones       0.97      1.00      0.98       801
+             TVs       1.00      0.99      1.00       708
+Washing Machines       1.00      0.98      0.99       803
+          fridge       0.00      0.00      0.00        25
+
+        accuracy                           0.98      7020
+       macro avg       0.76      0.76      0.76      7020
+    weighted avg       0.97      0.98      0.98      7020
+
+
+Manual test examples using final saved model:
+- iphone 7 32gb gold -> Mobile Phones
+- olympus e m10 mark iii geh use silber -> Digital Cameras
+- kenwood k20mss15 solo -> Microwaves
+- bosch wap28390gb 8kg 1400 spin -> Washing Machines
+- bosch serie 4 kgv39vl31g -> Fridge Freezers
+- smeg sbs8004po -> Fridge Freezers
